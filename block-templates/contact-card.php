@@ -35,9 +35,8 @@ $id = 'contact-card-' . $block['id'];
 		<?php echo wp_kses_post( wp_get_attachment_image( get_field( 'banner' ) ) ); ?>
 	</div>
 	<InnerBlocks
-			template="<?php echo esc_attr( wp_json_encode( $template ) ); ?>"
-			allowedBlocks="<?php echo esc_attr( wp_json_encode( $allowed_blocks ) ); ?>"
-			templateLock="all"
+		template="<?php echo esc_attr( wp_json_encode( $template ) ); ?>"
+		allowedBlocks="<?php echo esc_attr( wp_json_encode( $allowed_blocks ) ); ?>"
+		templateLock="all"
 	/>
-
 </div>
