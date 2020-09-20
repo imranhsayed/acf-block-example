@@ -1,12 +1,36 @@
 [
     {
         "key": "group_5f66d6c9cdada",
-        "title": "About",
+        "title": "Contact Card",
         "fields": [
             {
                 "key": "field_5f66d6d1e1071",
-                "label": "Image",
-                "name": "image",
+                "label": "Photo",
+                "name": "photo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5f66fc7e57f8b",
+                "label": "Banner",
+                "name": "banner",
                 "type": "image",
                 "instructions": "",
                 "required": 0,
@@ -33,7 +57,7 @@
                 {
                     "param": "block",
                     "operator": "==",
-                    "value": "acf\/about"
+                    "value": "acf\/contact-card"
                 }
             ]
         ],
