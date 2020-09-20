@@ -33,6 +33,7 @@ class ACF_Block_Example {
 				'render_template' => ACFB_BLOCK_TEMPLATE_PATH . 'contact-card.php',
 				'enqueue_style'  => ACFB_PLUGIN_DIR_URI . '/assets/editor.css',
 				'mode'            => 'preview',
+				'icon'           => 'id',
 				'supports'        => [
 					'align'           => false,
 					'anchor'          => true,
