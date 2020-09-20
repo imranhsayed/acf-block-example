@@ -9,7 +9,7 @@ $template = array(
 	) )
 );
 
-$allowed_blocks = ['core/heading', 'core/paragraph'];
+$allowed_blocks = ['core/heading', 'core/paragraph', 'core/image'];
 
 $classes = ['block-about'];
 // Create class attribute allowing for custom "className" and "align" values.
@@ -27,7 +27,7 @@ if( !empty($block['align']) ) {
 		allowedBlocks="<?php echo esc_attr( wp_json_encode( $allowed_blocks ) ); ?>"
 	/>
 	<div class="block-about__image">
-		<?php wp_get_attachment_image( get_field( 'image' ), 'be_thumbnail_l' ); ?>
+		<?php echo wp_get_attachment_image( get_field( 'image' ), 'be_thumbnail_l' ); ?>
 	</div>
 </div>
 
