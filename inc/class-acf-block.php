@@ -28,9 +28,10 @@ class ACF_Block_Example {
 			) );
 
 			acf_register_block_type( array(
-				'title'           => __( 'About', 'acf-block-example' ),
-				'name'            => 'about',
-				'render_template' => ACFB_BLOCK_TEMPLATE_PATH . 'about.php',
+				'title'           => __( 'Contact Card', 'acf-block-example' ),
+				'name'            => 'contact-card',
+				'render_template' => ACFB_BLOCK_TEMPLATE_PATH . 'contact-card.php',
+				'enqueue_style'  => ACFB_PLUGIN_DIR_URI . '/assets/editor.css',
 				'mode'            => 'preview',
 				'supports'        => [
 					'align'           => false,

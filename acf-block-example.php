@@ -17,6 +17,4 @@ define( 'ACFB_PLUGIN_DIR_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) )
 define( 'ACFB_BLOCK_TEMPLATE_PATH', ACFB_PLUGIN_DIR_PATH . '/block-templates/' );
 define( 'ACFB_PLUGIN_DIR_URI', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
 
-include_once 'inc/class-editor-assets.php';
 include_once 'inc/class-acf-block.php';
-

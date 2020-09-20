@@ -1,3 +1,119 @@
-.about-block {
-    background: gray;
+.contact-card {
+    z-index: 1;
+    position: relative;
+    height: 580px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    /*
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.2);
+    */
+}
+
+.contact-card.active {
+    height: 800px;
+}
+
+.banner {
+    z-index: 2;
+    position: relative;
+    margin-top: -204px;
+    width: 100%;
+    height: 200px;
+    background-image: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/RQ2Z75PQIN.jpg");
+    background-size: cover;
+    border-bottom: solid 1px lightgrey;
+
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+}
+
+.banner.active {
+    height: 0;
+}
+
+.banner img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.contact-card .card-heading,
+.contact-card .block-editor-inner-blocks .card-heading{
+    margin-top: 100px;
+}
+
+.editor-styles-wrapper .wp-block-social-links {
+    margin-top: 0;
+    padding-top: 24px;
+    justify-content: center;
+}
+
+.photo {
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    margin: 0 auto;
+    background-image: url("https://filmshotfreezer.files.wordpress.com/2011/07/untitled-1.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    top: 75px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -moz-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -o-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -ms-transition: top 0.7s ease-in-out, background 0.15s ease;
+}
+
+.photo img {
+    border-radius: 50%;
+}
+
+.photo.active {
+    top: -80px;
+}
+
+button.contact {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -15px;
+    width: 100%;
+    height: 35px;
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: white;
+    background-color: #C7D0E1;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+button.contact:hover {
+    cursor: pointer;
+    background-color: #979da8;
+}
+
+button.contact:focus {
+    outline: 0;
 }
